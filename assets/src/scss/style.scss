@@ -1,0 +1,52 @@
+/*!
+Theme Name: oliver
+Theme URI: github.com/itsumrat
+Author: Hussain Sumrat 
+Author URI: github.com/itsumrat
+Version: 0.0.1
+Description: 
+Licensed Commercial 
+Copyright 2015-2015 Hussain Sumrat
+*/
+
+@charset "utf-8";
+
+// Import Bootstrap parts
+@import "../../vendor/bootstrap/scss/variables";
+@import "../../vendor/bootstrap/scss/mixins";
+
+// Import "include media"
+@import "../../vendor/include-media/dist/include-media";
+
+// Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/helpers";
+
+// Components
+@import "components/slider";
+@import "components/feature";
+@import "components/checkout";
+@import "components/screenshot";
+@import "components/testimonial";
+@import "components/support";
+@import "components/newsletter";
+@import "components/blog";
+@import "components/contact";
+
+// Theme
+// @import "themes/dark";
+
+// Base
+@import "base/default";
+@import "base/typography";
+
+// Layout
+//@import "layout/body";
+//@import "layout/header";
+//@import "layout/aside";
+//@import "layout/main";
+
+// Shame
+//@import "shame";

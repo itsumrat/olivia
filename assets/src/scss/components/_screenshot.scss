@@ -1,0 +1,87 @@
+#screenshot {
+	height: 100vh;
+	padding-top: 110px;
+	padding-bottom: 70px;
+
+	h2 {
+		padding-bottom: 50px;
+	}
+
+	.carousel-control.right,.carousel-control.left {
+		background-image: none;
+		display: none;
+	}
+
+	.carousel-indicators {
+		//position: absolute;
+	    bottom: -50px;
+	    //width: inherit;
+	    text-align: center;
+	  li {
+	    //display: block;
+	    width: 12px;
+	    height: 12px;
+	    margin-bottom: -9px;
+	    border-width: .13em;
+	    border-color: #a62ad7;
+	  }
+	  .active {
+	    width: 12px;
+	    height: 12px;
+	    //margin-bottom: 10px;
+	    background-color: #a62ad7;
+	  }
+	}
+}
+
+
+
+/*========== Media Query ==========*/
+
+@media screen and (min-width:315px) and (max-width:640px) {
+
+	#screenshot {
+		height: 100%;
+		padding-top: auto;
+		//padding-left: 5px;
+
+		h2 {
+			padding-bottom: 30px;
+		}
+
+		.carousel-item {
+
+			img {
+				min-width: 150px;
+				max-width: 250px;
+				min-height: 150px;
+				max-height: 250px;
+				padding-bottom: 10px;
+
+				&:nth-child(2) {
+					//padding-left: 10px;
+				}
+			}
+		}
+	}
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+	
+
+}
+
+@media screen and (max-width: 1366px) , screen and (max-height: 768px) {
+
+  
+
+}
+
+@media screen and (max-width: 1280px) , screen and (max-height: 800px) {
+
+  
+	
+}

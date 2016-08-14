@@ -1,0 +1,256 @@
+/*--- header-section ---*/
+#header-section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 22222;
+
+  .nav {
+    padding-top: 30px;
+    float: right;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      padding: 12px 20px;
+      text-transform: uppercase;
+
+      &:hover {
+          background-color: #b558e0;
+          border-radius: 32px;
+          color: #fff;
+          text-decoration: none;
+        }
+    }
+  }
+
+  /* .logo {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .header-menu ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+
+    li {
+      display: inline-block;
+      padding: 45px 0 0;
+
+      a {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        padding: 10px 25px;
+        text-transform: uppercase;
+
+        &:hover {
+          //padding: 7px 17px;
+          background-color: #b558e0;
+          border-radius: 32px;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  } */
+}
+
+.parallax_bg {
+  background-image: url("../img/sliderbg.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh !important;
+}
+/*--- slider section ---*/
+#top-section {
+  height: auto;
+  position: relative;
+
+  img {
+    padding-top: 33%;
+    z-index: 1;
+    position: absolute;
+    //box-shadow: 0px 136px 32px 2px gray;
+  }
+  .header-text {
+    padding-top: 40%;
+    @include header-text;
+    
+    img {
+      box-shadow: none;
+    }
+    h1 {
+      @include heading;
+      color: #fff;
+      white-space: pre-line;
+      border-bottom: 0; 
+    }
+    p {
+      @include header-para;
+      color: #fff;
+    }
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.5;
+    }
+
+    .apps {
+      ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+          display: inline-block;
+        }
+      }
+      img:first-child {
+        padding-right: 20px;
+        padding-top: 0;
+        position: initial;
+      }
+    }
+  }
+}
+
+.overlay:before {
+  background: linear-gradient(to right, #b558e0, #7a8cef);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+
+/*============ Media Query ==============*/
+
+@media screen and (min-width:315px) and (max-width:480px) {
+
+  .navbar-brand img {
+    width: 170px;
+  }
+
+  #top-section {
+    height: 100%;
+
+    .header-text {
+      padding-top: 30%;
+    }
+
+    .apps {
+      img{
+        width: 150px;
+
+        &:first-child {
+          margin-left: -10px;
+        }
+        &:last-child {
+          padding-right: 0; 
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
+@media screen and (min-width:481px) and (max-width:640px) {
+
+  #top-section {
+    height: 100%;
+
+    .header-text {
+      padding-top: 50%;
+    }
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  #top-section {
+    height: 100%;
+    padding-top: 10%;
+  }
+
+  #header-section .nav {
+    float: none;
+  }
+
+}
+
+@media screen and (max-width: 1280px) , screen and (max-height: 800px) {
+
+  #top-section {
+    height: 100%;
+
+    img {
+        padding-top: 20%;
+        z-index: 0;
+      }
+  }
+  
+}
+
+// Collapse navbar-item fix
+// @see: https://github.com/twbs/bootstrap/issues/17250
+// --------------------------------
+.navbar-toggleable-xs {
+  @media (max-width: 543px) {
+    clear: both;
+    
+    .navbar-nav {
+      float: none !important;
+    } 
+    .navbar-nav .nav-item + .nav-item {
+      margin-left: 0;
+    }
+    .navbar-nav .nav-item {
+      float: none;
+    }
+  }
+}
+.navbar-toggleable-sm {
+  @media (max-width: 767px) {
+    clear: both;
+    
+    .navbar-nav {
+      float: none !important;
+    }    
+    .navbar-nav .nav-item + .nav-item {
+      margin-left: 0;
+    }
+    .navbar-nav .nav-item {
+      float: none;
+    }
+  }
+}
+/* .navbar-toggleable-md {
+  @media (max-width: 991px) {
+    clear: both;
+
+    .navbar-nav {
+      float: none !important;
+    }    
+    .navbar-nav .nav-item + .nav-item {
+      margin-left: 0;
+    }
+    .navbar-nav .nav-item {
+      float: none;
+    }
+  }
+} */

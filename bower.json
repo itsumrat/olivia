@@ -1,0 +1,28 @@
+{
+  "name": "Olivia",
+  "description": "A Bootstrap Theme",
+  "version": "",
+  "homepage": "github.io/itsumrat",
+  "authors": [
+    {
+      "name": "Hussain Sumrat",
+      "email": "itsumrat@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha",
+    "font-awesome": "4.5.0",
+    "include-media": "1.4.4",
+    "FitText.js": "jquery-fittext#^1.2.0",
+    "restive": "^1.3.6",
+    "slideout.js": "^0.1.12"
+  },
+  "devDependencies": {}
+}

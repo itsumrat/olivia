@@ -1,0 +1,176 @@
+#blog {
+	color: #000;
+	padding-top: 130px;
+	background: url(../img/blogbg.jpeg) no-repeat center center fixed;
+  	background-size: cover;
+  	position: relative;
+  	width: 100%;
+  	height: 100vh;
+
+  	.blog-overlay:before {
+	  content: "";
+	  height: 100%;
+	  left: 0;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	  z-index: 0;
+	  background-color: #fff;
+      opacity: .9;
+  	}
+
+  	.header-text {
+  		padding-bottom: 50px;
+  	}
+
+  	.carousel-indicators {
+  		margin-bottom: -31px;
+
+  		li {
+  			border-color: #a62ad7;
+  			width: 12px;
+  			height: 12px;
+  		}
+
+  		.active {
+			background-color: #a62ad7;
+		}
+  	}
+
+	.row {
+		margin-bottom: 50px;
+	}
+
+	.media {
+
+		.media-left {
+			padding: 15px;
+			background-color: #a62ad7; 
+			position: absolute;
+			color: #fff;
+			text-align: center;
+
+			&:hover {
+				text-decoration: none;
+				background-color: #4183f1;
+			}
+			
+			/* Bubble */
+			&:after {
+			    position: absolute;
+			    bottom: 68px;
+			    left: 69px;
+			    display: block;
+			    width: 0;
+			    content: "";
+			    border-color: #a62ad7 transparent;
+			    border-style: solid;
+			    border-width: 10px 10px 0;
+			    transform: rotate(-91deg);
+			}
+
+			&:hover:after {
+				border-color: #4183f1 transparent;
+			}
+		} 
+		.media-body {
+			width: 100%;
+			padding-left: 17%;
+
+			a {
+				color: #000;
+
+				&:hover {
+					color: #000;
+				}
+		}	}
+	}	
+}
+
+
+/*=========== Media Query ============*/
+
+@media screen and (min-width:315px) and (max-width:768px) {
+
+	#blog {
+		background-image: none;
+		color: #000;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	  	height: 100%;
+
+	  	.header-text {
+	  		padding-bottom: 20px;
+	  	}
+
+	  	.carousel-indicators {
+	  		margin-bottom: -31px;
+
+	  		li {
+	  			border-color: #a62ad7;
+	  			width: 12px;
+	  			height: 12px;
+	  		}
+
+	  		.active {
+				background-color: #a62ad7;
+			}
+	  	}
+
+		.row {
+			margin-bottom: 0;
+		}
+
+		.media {
+
+			.media-left {
+				padding: 15px;
+				background-color: #a62ad7; 
+				position: absolute;
+				color: #fff;
+				text-align: center;
+			} 
+			.media-body {
+				width: 100%;
+				padding-left: 20%;
+			}
+		}	
+	}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+	#blog {
+		background-image: none;
+		color: #000;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	  	height: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1366px) , screen and (max-height: 768px) {
+
+  	#support {
+		height: 100%;
+
+		.btn {
+			margin: 4%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 1280px) , screen and (max-height: 800px) {
+
+  	#support {
+		height: 100%;
+
+		.btn {
+			margin: 4%;
+		}
+	}
+	
+}

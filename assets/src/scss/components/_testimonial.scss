@@ -1,0 +1,46 @@
+#testimonial{
+	background: linear-gradient(to right, #b558e0, #7a8cef);
+	padding-top: 90px;
+	height: 40vh;
+
+	.client-testmonial img {
+		float: left;
+		height: 163px;
+		margin-bottom: 70px;
+		margin-right: 25px;
+		width: 163px;
+		border: 5.5px solid #fff;
+		border-radius: 50%;
+	}
+
+	.client-testmonial p {
+	 	color: #fff;
+	  	padding-top: 13px;
+	  	line-height: 1;
+
+	  	span {
+	  		font-size: 25px;
+	  	}
+	}
+
+	.client-testmonial h3 {
+	  	color: #fff;
+	  	line-height: 1.3;
+	}
+} 
+
+/*========== Media Query ===========*/
+
+@media screen and (min-width:315px) and (max-width:640px) {
+
+	#testimonial {
+		height: auto;
+		padding-bottom: 30px;
+
+		.client-testmonial img {
+			float: none;
+			margin-bottom: 30px;
+		}
+	}
+
+}
